@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <title>Treballs RIA</title>
-    <style type="text/css">
+   <style type="text/css">
         /*reset*/
         * {
             margin: 0;
@@ -32,7 +32,9 @@
             width: 100%;
             height: auto;
             display: flex;
-            flex-direction: column;
+            background: red;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
 
         header {
@@ -94,7 +96,8 @@
             padding: 4em 2em 2em 2em;
             background-color: #F4ECEC;
         }
-        main section {
+
+        section {
             width: 100%;
             padding: 0.6em 0.6em 0 0.6em;
             margin-bottom: 1em;
@@ -104,19 +107,19 @@
             border-radius: 5px;
         }
 
-        main section figure {
+        section figure {
             width: 100%;
             height: 232px;
         }
 
-        main section figure img {
+        section figure img {
             max-height: 100%;
             max-width: 100%;
             object-position: center top;
             object-fit: cover;
         }
 
-        main section figcaption {
+        section figcaption {
             display: flex;
             color: white;
             background: #2B9E69;
@@ -180,7 +183,7 @@
                 width: 55%;
                 margin: auto;
                 position: relative;
-                font-size: 3.7vw; 
+                font-size: 3.7vw;
                 top: -20px;
                 padding: 20vw 0 0 0;
                 text-align: left;
@@ -196,22 +199,26 @@
                 width: 55%;
                 margin: auto;
             }
-            nav{
+
+            nav {
                 font-size: 1.5em;
                 padding: 0 30vw;
             }
-            .grid-container{
+
+            .grid-container {
                 width: 90%;
                 margin: auto;
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                justify-content: space-between;
+                justify-content: flex-start;
             }
-            main section{
-                max-width: 47.5%;
+
+            main section {
+                max-width: 46.5%;
                 margin: 0.5em;
             }
+
         }
 
         /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -219,26 +226,31 @@
             body {
                 background: #2B9E69;
             }
-            h1{
+
+            h1 {
                 width: 80%;
             }
-            h2{
+
+            h2 {
                 width: 80%;
                 text-align: right;
             }
-            h1 br{
-                display:none;
+
+            h1 br {
+                display: none;
             }
-           
-            main section{
+
+            main section {
                 max-width: 31%;
                 margin: 0.5em;
             }
-            footer{
+
+            footer {
                 align-items: center;
                 flex-direction: row;
             }
-            .xxss{
+
+            .xxss {
                 width: 65%;
                 justify-content: space-between;
             }
